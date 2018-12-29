@@ -5,7 +5,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/*<>*/
+/*The below html code is saved as DigitalClock.html file and executed using appletviewer*/
+/*<applet code="DigitalClock.class" width="200" height="200"></applet>*/
 
 public class DigitalClock extends Applet implements Runnable,ActionListener
 {
@@ -156,7 +157,7 @@ System.out.println(e);
 //Any action is performed like button click
 public void actionPerformed(ActionEvent e)
 {
-//getSource() gets the method id
+//e.getSource() gets the method id
 //start a thread when start button is pressed
 if(e.getSource()==start){
 on=true;new Thread(this,"StopWatch").start();
